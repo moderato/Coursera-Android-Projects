@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <SeekBar
+        android:id="@+id/seekbar"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </SeekBar>
+    
+    <LinearLayout 
+        android:orientation="horizontal"
+        android:layout_above="@+id/seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:baselineAligned="false">
+        <LinearLayout
+        	android:orientation="vertical"
+        	android:layout_weight="3"
+        	android:layout_width="match_parent"
+        	android:layout_height="match_parent">
+        
+	        <ImageView
+	            android:id="@+id/zero"
+	            android:contentDescription="@string/description"
+	            android:background="@color/DarkOliveGreen"
+	            android:layout_weight="1"
+	        	android:layout_width="match_parent"
+	        	android:layout_height="match_parent">
+	        </ImageView>
+	        
+	        <ImageView
+	            android:id="@+id/one"
+	            android:contentDescription="@string/description"
+	            android:background="@color/White"
+	            android:layout_weight="1"
+	        	android:layout_width="match_parent"
+	        	android:layout_height="match_parent">
+	        </ImageView>  
+	    </LinearLayout>
+    
+	    <LinearLayout 
+	        android:orientation="vertical"
+	        android:layout_weight="2"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent">
+        
+	        <ImageView
+	            android:id="@+id/two"
+	            android:contentDescription="@string/description"
+	            android:background="@color/SeaGreen"
+	            android:layout_weight="1"
+	        	android:layout_width="match_parent"
+	        	android:layout_height="match_parent">
+	        </ImageView>
+	        
+	        <ImageView
+	            android:id="@+id/three"
+	            android:contentDescription="@string/description"
+	            android:background="@color/Gray"
+	            android:layout_weight="1"
+	        	android:layout_width="match_parent"
+	        	android:layout_height="match_parent">
+	        </ImageView>
+	        
+	        <ImageView
+	            android:id="@+id/four"
+	            android:contentDescription="@string/description"
+	            android:background="@color/MidnightBlue"
+	            android:layout_weight="1"
+	        	android:layout_width="match_parent"
+	        	android:layout_height="match_parent">
+	        </ImageView>
+	        
+	    </LinearLayout>
+        
+    </LinearLayout>
+
+</RelativeLayout>
